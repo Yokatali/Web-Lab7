@@ -26,9 +26,14 @@ nav a.active {
   height: 150px;
   object-fit: contain;
 }
-
 .filters {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.product-detail img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
 }
