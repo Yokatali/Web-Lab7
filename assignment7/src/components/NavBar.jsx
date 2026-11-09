@@ -6,6 +6,7 @@ export default function NavBar() {
       <NavLink to="/" end>
         Home
       </NavLink>
+      <NavLink to="/products">Products</NavLink>
     </nav>
   );
 }
