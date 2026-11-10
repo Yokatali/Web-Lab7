@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useCartStore } from "../store/cartStore.js";
 
-export default function NavBar() {
+export default function NavBar({ theme, onToggleTheme }) {
   const { user, dispatch } = useAuth();
   const itemCount = useCartStore((state) =>
     state.items.reduce((sum, item) => sum + item.quantity, 0),
@@ -28,6 +28,9 @@ export default function NavBar() {
       ) : (
         <NavLink to="/login">Login</NavLink>
       )}
+      <button type="button" onClick={onToggleTheme}>
+        {theme === "light" ? "Dark mode" : "Light mode"}
+      </button>
     </nav>
   );
 }
