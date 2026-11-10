@@ -37,3 +37,16 @@ nav a.active {
   width: 100%;
   max-width: 300px;
 }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 300px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
